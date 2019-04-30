@@ -1,0 +1,17 @@
+        public int NumJewelsInStones(string J, string S)
+        {
+            int num=0;
+            char[] jarray = J.ToCharArray();
+            char[] sarray = S.ToCharArray();
+          for(int i=0;i< jarray.Length;i++)
+            {
+                for(int j=0;j<sarray.Length;j++)
+                {
+                    if(jarray[i]==sarray[j])
+                    {
+                        num++;
+                    }
+                }
+            }
+            return num;
+        }
